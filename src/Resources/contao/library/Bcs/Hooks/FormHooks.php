@@ -32,7 +32,7 @@ class FormHooks
             $_ZAP_ARRAY = http_build_query($_ZAP_ARRAY );
             
             // get my zap URL
-            $ZAPIER_HOOK_URL = "https://hooks.zapier.com/hooks/catch/23448046/uokmvyp/";
+            $ZAPIER_HOOK_URL = "ASDF";
             
             // curl my data into the zap
             $ch = curl_init( $ZAPIER_HOOK_URL);
