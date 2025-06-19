@@ -1,0 +1,42 @@
+
+{
+    "name":"bright-cloud-studio/contao-zapier",
+    "description":"Uses Contao forms to send data to Zapier",
+    "keywords": ["contao", "zapier", "form", "bright", "cloud", "studio"],
+    "type": "contao-bundle",
+    "homepage": "http://brightcloudstudio.com/",
+    "license": "LGPL-3.0+",
+    "authors":[
+        {
+            "name": "Bright Cloud Studio",
+            "homepage": "https://brightcloudstudio.com",
+            "email": "mark@brightcloudstudio.com",
+            "role": "Developer"
+        }
+    ],
+    "support":{
+        "issues": "https://github.com/bright-cloud-studio/contao-zapier/issues",
+        "source": "https://github.com/bright-cloud-studio/contao-zapier"
+    },
+    "require":{
+        "php": "^8.1",
+        "contao/core-bundle": "^5.3"
+    },
+    "extra":{
+        "contao-manager-plugin": "Bcs\\ZapierBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bcs\\ZapierBundle\\": "src"
+        },
+        "classmap": [
+            "src/Resources/contao"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
+    }
+}
