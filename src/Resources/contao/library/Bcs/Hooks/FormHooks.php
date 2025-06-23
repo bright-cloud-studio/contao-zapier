@@ -21,17 +21,6 @@ class FormHooks
         // Assignment Selection Form
         if($formData['formID'] == 'zapier') {
             
-            /*
-            $demo_array = array(
-                "test_var_1" => "test data",
-                "test_var_2" => "test data bbb",
-                "test_var_3" => "test data ccc",
-                "test_var_4" => "test ddd"
-            );
-            echo "<pre>" . print_r($demo_array) . "</pre><br><br>";
-            echo "<pre>" . print_r($submittedData) . "</pre><br><br>";
-            */
-            
             // Grab the hook url from Settings
             $config_url = Config::get('zapier_hook_url');
             
